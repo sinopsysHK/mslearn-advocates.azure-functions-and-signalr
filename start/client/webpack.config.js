@@ -48,9 +48,7 @@ module.exports = {
         ]
       },
       plugins: [
-        new Dotenv({
-          path: path.resolve(__dirname, './.env')
-        }),
+        new Dotenv(),
         new CopyWebpackPlugin({
             patterns: [
               { from: './src/style.css', to: './' },
