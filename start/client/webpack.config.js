@@ -51,6 +51,7 @@ module.exports = {
         new Dotenv(),
         new CopyWebpackPlugin({
             patterns: [
+              { from: './src/style.css', to: './' },
               { from: './src/favicon.ico', to: './' },
               { from: './index.html', to: './'}
             ],
